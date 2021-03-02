@@ -8,5 +8,5 @@ RUN apk update && \
     chmod +x ./kubectl && \
     mv ./kubectl /usr/local/bin/kubectl && \
     kubectl version --client
-
+RUN curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
 USER jenkins
